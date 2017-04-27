@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/blog/como-crear-un-blog-con-hugo/</loc>
+    <lastmod>2017-04-25T23:14:03-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/blog/</loc>
+    <lastmod>2017-04-25T23:14:03-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/home/</loc>
+  </url>
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/</loc>
+    <lastmod>2017-04-25T23:14:03-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santiago-j-s.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

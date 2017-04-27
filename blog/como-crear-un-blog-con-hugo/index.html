@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Example blog">
+
+
+    <meta property="twitter:site" content="@santiago_j_s">
+
+<meta property="twitter:title" content="Como crear un blog con Hugo">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://santiago-j-s.github.io//images/image.jpg">
+
+<meta property="twitter:description" content="Desc">
+
+<title>
+
+
+     Santana Santiago - Como crear un blog con Hugo 
+
+</title>
+<link rel="canonical" href="https://santiago-j-s.github.io/blog/como-crear-un-blog-con-hugo/">
+
+
+<link rel="stylesheet" href="https://santiago-j-s.github.io/css/main.v1.0.0.css">
+
+
+  <link rel="stylesheet" href="https://santiago-j-s.github.io/css/highlight.min.css">
+
+
+
+  <link rel="stylesheet" href="https://santiago-j-s.github.io/css/progressively.min.css">
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://santiago-j-s.github.io/img/logo.png"
+
+>
+
+
+
+
+</head>
+
+
+<body>
+
+
+<section class="header">
+
+    <div class="container">
+        <div class="content">
+            <a href="https://santiago-j-s.github.io/"><div class="name"><h1>Santana Santiago</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="https://santiago-j-s.github.io/blog/"><li>Blog</li></a>
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Como crear un blog con Hugo
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title='Martes 25 de Abril de 2017'>
+                        Abril 25, 2017
+                    </div>
+                    
+                        
+                    
+                    <div class="reading-time">
+                        <div class="middot"></div>
+                        lectura de 2 minutos
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+    
+    
+
+<p><a href="http://gohugo.io">Hugo</a> es un generador de páginas web estáticas muy sencillo de usar. ¿Qué es una página web estática? Simple, una página en la que el único trabajo que tiene que hacer el servidor HTTP es servir los archivos HTML, JS y CSS previamente generados, a diferencia de los sitios dinámicos en que el contenido HTML es generado por el servidor desde el código de algún lenguaje de programación (PHP por ejemplo) al momento de recibir una petición.</p>
+
+<p>Los sitios estáticos tienen algunas ventajas tales como facilidad de mantenimiento y el poder alojar el sitio en casi cualquier lado.</p>
+
+<h3 id="pasos-necesarios-para-crear-el-blog">Pasos necesarios para crear el blog</h3>
+
+<p>Para empezar necesitamos instalar Hugo, si tienen el entorno del lenguaje de programación Go instalado todo lo que tienen que hacer es ejecutar los siguientes comandos en una terminal:</p>
+
+<pre><code class="language-bash">go get github.com/kardianos/govendor
+govendor get github.com/spf13/hugo
+go install github.com/spf13/hugo
+</code></pre>
+
+<p>También se puede instalar Hugo desde los binarios (Windows, Linux, OS X, FreeBSD) que se pueden encontrar <a href="https://github.com/spf13/hugo/releases">aquí</a>.</p>
+
+<p>Una vez instalado sobre el directorio que va a alojar el blog ejecutamos:</p>
+
+<pre><code class="language-bash">hugo new site &quot;blog&quot;
+</code></pre>
+
+<p>que creará la siguiente estructura de directorios:</p>
+
+<pre><code class="language-bash">- blog
+   - archetypes
+   - config.toml
+   - content
+   - data
+   - layouts
+   - static
+   - themes
+</code></pre>
+
+<p>Ya casi esta listo el sitio para empezar a escribir el contenido, pero todavía falta elegir un tema para nuestro blog antes de poder empezar a usarlo, en <a href="http://themes.gohugo.io/">http://themes.gohugo.io/</a> tienen una amplia lista de temas disponibles para ver. En este caso instalaré el tema <em>cocoa-eh</em>, lo que tienen que hacer es descargar el tema de <a href="https://github.com/fuegowolf/cocoa-eh-hugo-theme/releases">aquí</a>, descomprimirlo dentro dentro de la carpeta <em>themes</em>, luego sobreescriban los archivos del directorio blog con los que se encuentran en <em>exampleSite</em> dentro de la carpeta del tema.</p>
+
+<p>Con esto la configuración esta lista, pueden probar el sitio usando el comando</p>
+
+<pre><code class="language-bash">hugo serve -D 
+</code></pre>
+
+<p>Podrán entrar al sitio desde <a href="http://localhost:1313">http://localhost:1313</a>.</p>
+
+
+                <br>
+            </div>
+            
+                <div class="navigation">
+                    
+                    <div style="width: 100%;"></div>
+                    
+                </div>
+            
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="copyright">
+
+        
+
+        </div>
+        <div class="icons">
+
+        
+            <a href="https://github.com/santiago-j-s" target="_blank">
+                <img class="icon" src="https://santiago-j-s.github.io/img/github.svg" alt="github" />
+            </a>
+        
+
+        
+            <a href="https://twitter.com/santiago_j_s" target="_blank">
+                <img class="icon" src="https://santiago-j-s.github.io/img/twitter.svg" alt="twitter" />
+            </a>
+        
+
+        
+            <a href="https://www.linkedin.com/in/santiago-santana-22569399" target="_blank">
+                <img class="icon" src="https://santiago-j-s.github.io/img/linkedin.svg" alt="linkedin" />
+            </a>
+        
+
+        
+            <a href="mailto:santana.santiago@gmail.com">
+                <img class="icon" src="https://santiago-j-s.github.io/img/email.svg" alt="email" />
+            </a>
+        
+
+        
+            <a href="https://santiago-j-s.github.io/index.xml">
+                <img class="icon" src="https://santiago-j-s.github.io/img/rss.svg" alt="rss" />
+            </a>
+        
+
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://santiago-j-s.github.io/js/highlight.min.js" defer></script>
+  
+
+
+
+  <script src="https://santiago-j-s.github.io/js/progressively.min.js" defer></script>
+
+
+
+
+<script>
+  window.onload = function() {
+    
+      hljs.initHighlighting();
+    
+    
+      progressively.init({delay: 30, throttle: 50});
+    
+  };
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+
+
+
+</body>
+</html>
+
